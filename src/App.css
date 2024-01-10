@@ -1,0 +1,326 @@
+/* green color #143E2F  (20,62,47)*/
+
+:root {
+  --green: rgb(20, 62, 62);
+  /* --primary-color: rgba(25, 25, 25, 80%); */
+  --primary-color: #00171f;
+  --text-color: #f4f0ef;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  /* background-color: lightblue; */
+  line-height: 1;
+  /* height: 100vh; */
+}
+
+.my-10 {
+  margin: 10px 0;
+}
+.my-50 {
+  margin: 50px 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  letter-spacing: 3px;
+}
+h3 {
+  letter-spacing: 1px;
+}
+h2 {
+  letter-spacing: 1.5px;
+}
+
+.navbar {
+  /* margin: 0 auto; */
+  position: fixed;
+  z-index: 111;
+  /* border: 3px solid red; */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: var(--primary-color); */
+  /* height: 8vh; */
+  width: 100vw;
+}
+nav ul {
+  /* border: 3px solid white; */
+  display: flex;
+  /* margin: auto; */
+}
+nav ul li {
+  margin: 0 12px;
+  /* border: 3px solid blue; */
+}
+
+.nav-link {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  /* line-height: normal; */
+  color: var(--text-color);
+  transition: all ease-in 0.3s;
+}
+.nav-link:hover {
+  opacity: 0.5;
+}
+.home-page {
+  position: relative;
+  margin: auto 0;
+  /* border: 4px solid black; */
+  background: url("./assets/pexels-junior-teixeira-2047914.jpg") no-repeat
+    center center/cover;
+  /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10%;
+  align-items: flex-start;
+  /* text-align: center; */
+  /* gap: 20rem; */
+  height: 100vh;
+}
+
+.home-page .name {
+  margin-top: 20vh;
+  z-index: 1;
+}
+.home-page .links {
+  padding: 20px 0;
+  margin-top: 2rem;
+}
+.home-page .link {
+  border: 2px solid white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: var(--text-color);
+  margin: 0 10px;
+  letter-spacing: 2px;
+  transition: all ease 0.3s;
+}
+.link:hover {
+  opacity: 0.5;
+}
+
+.home-page h1 {
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+.home-page h2 {
+  font-weight: 400;
+}
+.home-page h3 {
+  letter-spacing: 10px;
+  font-weight: 300;
+  margin: 10px 0;
+  /* text-align: center; */
+}
+.social-icons {
+  /* margin-top: 50px; */
+  margin-bottom: 10px;
+  padding: 10px 0;
+  /* display: flex; */
+  z-index: 1;
+}
+.social-icons a {
+  margin: 0 8px;
+  color: var(--text-color);
+  /* height: 40px; */
+  transition: all ease 0.5s;
+  opacity: 0.5;
+}
+.social-icons a:hover {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5)
+  ); */
+  pointer-events: none;
+}
+/* // // // // About // // / //  */
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+
+  /* flex: content; */
+  /* padding-left: 10%; */
+  align-items: center;
+  height: 100vh;
+  /* padding: 0 10px; */
+}
+
+.about-img {
+  width: 300px;
+  height: 300px;
+  background: url("./assets/IMG_20210418_144810_664.jpg") no-repeat center
+    center/cover;
+  border-radius: 50%;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.about-content {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* width: 50%; */
+}
+.about-content h1 {
+  display: inline-block;
+  border-bottom: 2px solid var(--green);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+.about-content .desc {
+  margin: 20% 0;
+  max-width: 50ch;
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: 1px;
+  padding: 0 10px;
+}
+.about-content .about-address {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: normal;
+  text-align: center;
+}
+/*  / / /// // //Resume // / / */
+.resume {
+  background: url("./assets/pexels-minh-phuc-18293806.jpg") no-repeat center
+    center/cover;
+  padding: 8%;
+  position: relative;
+  /* height: 100vh; */
+  z-index: 1;
+}
+.resume::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  /* pointer-events: none; */
+  z-index: -1;
+}
+.resume h1 {
+  margin: 40px 0;
+  display: inline-block;
+  font-size: 2.5rem;
+  border-bottom: 3px solid var(--green);
+  padding-bottom: 10px;
+}
+.skills {
+  display: flex;
+  /* justify-content: center; */
+  /* margin: 30px 0; */
+  flex-wrap: wrap;
+}
+.skill {
+  height: 120px;
+  width: 120px;
+  /* border: 3px solid red; */
+  text-align: center;
+  margin: 20px 10px;
+}
+.skill h3 {
+  margin-top: 10px;
+}
+/* // */
+/*
+ * react-circular-progressbar styles
+ * All of the styles in this file are configurable!
+ */
+
+.CircularProgressbar {
+  /*
+   * This fixes an issue where the CircularProgressbar svg has
+   * 0 width inside a "display: flex" container, and thus not visible.
+   */
+  width: 100%;
+  /*
+   * This fixes a centering issue with CircularProgressbarWithChildren:
+   * https://github.com/kevinsqi/react-circular-progressbar/issues/94
+   */
+  vertical-align: middle;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #3e98c7;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+  /* Used when trail is not full diameter, i.e. when props.circleRatio is set */
+  stroke-linecap: round;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #3e98c7;
+  font-size: 20px;
+  /* dominant-baseline: middle; */
+  text-anchor: middle;
+}
+
+.bold {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+.normal {
+  font-weight: 400;
+}
+.active {
+  color: var(--green);
+  border-bottom: 1px solid var(--green);
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 480px) {
+  .icon-phone {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .about {
+    flex-direction: column;
+    padding: 10% 0;
+    text-align: center;
+    height: auto;
+  }
+  .about-content {
+    margin-top: 20px;
+  }
+}
