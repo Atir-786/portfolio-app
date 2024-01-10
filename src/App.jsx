@@ -6,7 +6,7 @@ import AppLayout from "./AppLayout";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/portfolio/">
+    <BrowserRouter basename="/portfolio-app/">
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<HomePage />} />
